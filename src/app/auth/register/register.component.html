@@ -1,0 +1,66 @@
+<!-- Start Register -->
+<div class="container">
+    <div class="toggle-buttons">
+      <button id="registerPatientBtn" class="active" (click)="toggleForm('patient')">S'inscrire en tant que Patient</button>
+      <button id="registerDoctorBtn" (click)="toggleForm('doctor')">S'inscrire en tant que Médecin</button>
+    </div>
+  
+    <form id="patientForm" [ngClass]="{ active: isPatientFormActive }">
+      <h2>S'inscrire en tant que Patient</h2>
+      <div class="form-group">
+        <label for="patientName">Nom</label>
+        <input type="text" id="patientName" name="patientName" required>
+      </div>
+      <div class="form-group">
+        <label for="patientEmail">Email</label>
+        <input type="email" id="patientEmail" name="patientEmail" required>
+      </div>
+      <div class="form-group">
+        <label for="patientPassword">Mot de passe</label>
+        <input type="password" id="patientPassword" name="patientPassword" required>
+      </div>
+      <div class="form-group">
+        <label for="patientDOB">Date de naissance</label>
+        <input type="date" id="patientDOB" name="patientDOB" required>
+      </div>
+      <div class="form-group">
+        <label for="patientAddress">Adresse</label>
+        <input type="text" id="patientAddress" name="patientAddress" required>
+      </div>
+      <button type="submit" class="submit-button">S'inscrire</button>
+    </form>
+  
+    <form id="doctorForm" [ngClass]="{ active: !isPatientFormActive }">
+      <h2>S'inscrire en tant que Médecin</h2>
+      <div class="form-group">
+        <label for="doctorName">Nom</label>
+        <input type="text" id="doctorName" name="doctorName" required>
+      </div>
+      <div class="form-group">
+        <label for="doctorEmail">Email</label>
+        <input type="email" id="doctorEmail" name="doctorEmail" required>
+      </div>
+      <div class="form-group">
+        <label for="doctorPassword">Mot de passe</label>
+        <input type="password" id="doctorPassword" name="doctorPassword" required>
+      </div>
+      <div class="form-group">
+        <label for="doctorSpecialty">Spécialité</label>
+        <input type="text" id="doctorSpecialty" name="doctorSpecialty" required>
+      </div>
+      <div class="form-group">
+        <label for="doctorLicenseNumber">Numéro de licence</label>
+        <input type="text" id="doctorLicenseNumber" name="doctorLicenseNumber" required>
+      </div>
+      <div class="form-group">
+        <label for="doctorClinicAddress">Adresse de la clinique</label>
+        <input type="text" id="doctorClinicAddress" name="doctorClinicAddress" required>
+      </div>
+      <button type="submit" class="submit-button">S'inscrire</button>
+    </form>
+  </div>
+  
+  
+
+
+<!-- End Register -->
