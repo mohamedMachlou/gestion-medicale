@@ -1,8 +1,9 @@
 <!-- Start Register -->
 <div class="container">
+  <div class="register">
     <div class="toggle-buttons">
-      <button id="registerPatientBtn" class="active" (click)="toggleForm('patient')">S'inscrire en tant que Patient</button>
-      <button id="registerDoctorBtn" (click)="toggleForm('doctor')">S'inscrire en tant que Médecin</button>
+      <button id="registerPatientBtn" class="patient" (click)="toggleForm('patient')">S'inscrire en tant que Patient</button>
+      <button id="registerDoctorBtn" class="medecin" (click)="toggleForm('doctor')">S'inscrire en tant que Médecin</button>
     </div>
   
     <form id="patientForm" [ngClass]="{ active: isPatientFormActive }">
@@ -27,7 +28,7 @@
         <label for="patientAddress">Adresse</label>
         <input type="text" id="patientAddress" name="patientAddress" required>
       </div>
-      <button type="submit" class="submit-button">S'inscrire</button>
+      <button type="submit"  class="submit-patient">S'inscrire</button>
     </form>
   
     <form id="doctorForm" [ngClass]="{ active: !isPatientFormActive }">
@@ -56,8 +57,9 @@
         <label for="doctorClinicAddress">Adresse de la clinique</label>
         <input type="text" id="doctorClinicAddress" name="doctorClinicAddress" required>
       </div>
-      <button type="submit" class="submit-button">S'inscrire</button>
+      <button type="submit" class="submit-medecin">S'inscrire</button>
     </form>
+  </div>
   </div>
   
   
