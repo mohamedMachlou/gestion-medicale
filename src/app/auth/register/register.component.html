@@ -8,6 +8,9 @@
   
     <form id="patientForm" [ngClass]="{ active: isPatientFormActive }">
       <h2>S'inscrire en tant que Patient</h2>
+      <div class="login">
+        <p>Déjà membre? <a href="">Connexion</a></p>
+      </div>
       <div class="form-group">
         <label for="patientName">Nom</label>
         <input type="text" id="patientName" name="patientName" required>
@@ -28,11 +31,17 @@
         <label for="patientAddress">Adresse</label>
         <input type="text" id="patientAddress" name="patientAddress" required>
       </div>
-      <button type="submit"  class="submit-patient">S'inscrire</button>
+      <div class="btn">
+        <button type="submit"  class="submit-patient">S'inscrire</button>
+      </div>
+      
     </form>
-  
+    
     <form id="doctorForm" [ngClass]="{ active: !isPatientFormActive }">
       <h2>S'inscrire en tant que Médecin</h2>
+      <div class="login">
+        <p >Déjà membre? <a href="">Connexion</a></p>
+      </div>
       <div class="form-group">
         <label for="doctorName">Nom</label>
         <input type="text" id="doctorName" name="doctorName" required>
@@ -57,12 +66,15 @@
         <label for="doctorClinicAddress">Adresse de la clinique</label>
         <input type="text" id="doctorClinicAddress" name="doctorClinicAddress" required>
       </div>
-      <button type="submit" class="submit-medecin">S'inscrire</button>
+      <div class="btn">
+        <button type="submit" class="submit-medecin">S'inscrire</button>
+      </div>
+      
     </form>
   </div>
-  </div>
-  
-  
+</div>
+
+
 
 
 <!-- End Register -->
