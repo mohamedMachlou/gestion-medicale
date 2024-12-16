@@ -1,0 +1,103 @@
+ form{
+    margin-top: 30px;
+    padding: 0px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 8px;
+  }
+
+form h2{
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+    margin: 20px 30px;
+    text-align: left;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  
+  form .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  form .btn button {
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 40%;
+    height: 40px;
+    background: #407cd4;
+    border-bottom-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+
+  form .pass-oublie p{
+    font-weight: 500;
+    font-size: medium;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  form .pass-oublie a{
+    color: #5c6263;
+    text-decoration: none;
+
+  }
+
+  form{
+    padding: 20px 0px;
+  }
+
+  /* Small devices (landscape phones, 576px and down) */
+  @media (max-width: 576px) {
+    
+    .toggle-buttons {
+      display: flex;
+      
+    }
+
+    .toggle-buttons button {
+        width: 50%;
+        height: 60px;
+      }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
